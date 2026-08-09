@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0D0F12;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .font-space {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0F12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F242D;
+  border-radius: 3px;
+  border: 1px solid #FFB02044;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFB020;
+}
+
+/* Circuit overlay effect */
+.bg-circuit-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Glassmorphic HUD Container - Balanced Transparency for 3D Background Visibility */
+.hud-card {
+  background: rgba(13, 16, 22, 0.72);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hud-card:hover {
+  border-color: rgba(255, 176, 32, 0.4);
+  box-shadow: 0 10px 30px -5px rgba(255, 176, 32, 0.2);
+  background: rgba(19, 23, 31, 0.82);
+}
+
+.hud-card-blue:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 10px 30px -5px rgba(56, 189, 248, 0.25);
+}
+
+/* Corners detailing for HUD elements */
+.hud-corner-tl {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #FFB020;
+  border-left: 2px solid #FFB020;
+}
+
+.hud-corner-br {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #FFB020;
+  border-right: 2px solid #FFB020;
+}
+
+.hud-corner-tl-blue {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #38BDF8;
+  border-left: 2px solid #38BDF8;
+}
+
+.hud-corner-br-blue {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #38BDF8;
+  border-right: 2px solid #38BDF8;
+}
+
+/* Text glow */
+.text-amber-glow {
+  text-shadow: 0 0 12px rgba(255, 176, 32, 0.5);
+}
+
+.text-blue-glow {
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+}
+
+/* Compact section container styling */
+.section-compact {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+@media (min-width: 640px) {
+  .section-compact {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
