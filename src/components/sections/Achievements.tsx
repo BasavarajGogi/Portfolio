@@ -22,7 +22,7 @@ export const Achievements: React.FC = () => {
             <span>06 // TROPHY CASE</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold font-rajdhani text-white tracking-wide uppercase">
-            GARAGE TROPHY CASE
+            ACHIEVEMENTS
           </h2>
           <p className="font-mono text-xs text-[#38BDF8] tracking-wider mt-0.5">
             HONORS, HACKATHONS & CLUB MILESTONES
