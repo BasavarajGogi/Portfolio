@@ -85,7 +85,7 @@ export const EDUCATION_DATA: EducationItem[] = [
     field: "Electronics and Communication Engineering",
     institution: "Atria Institute of Technology",
     scoreType: "CGPA",
-    score: "7.68"
+    score: "7.85"
   },
   {
     id: "edu-2",
